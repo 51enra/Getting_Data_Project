@@ -27,21 +27,23 @@ The following analysis is performed by run_analysis.R:
 
 ## Codebook
 The R script generates two output data sets:
-"full" containing 10299 observations of 68 variables
-"labelUnique" containing 180 observations of 68 variables
+- "full" containing 10299 observations of 68 variables
+- "labelUnique" containing 180 observations of 68 variables
 
 "full":
-Column 1 "Subject" [1..30] refers to the test subject for the measurement record
-Column 2 "Activity" [STANDING, SITTING, LAYING, WALKING, WALKING_DOWNSTAIRS,
+- Column 1 "Subject" [1..30] refers to the test subject for the measurement record
+- Column 2 "Activity" [STANDING, SITTING, LAYING, WALKING, WALKING_DOWNSTAIRS,
 WALKING_UPSTAIRS] refers to the activity for the measurement record
-Column 3...68 contain the mean and standard deviation for different motion sensor
-readings from the smartphone. Multiple readings are recorded for each individuum
+- Column 3...68 contain the mean and standard deviation for different motion sensor
+readings ("features") from the smartphone. The features are described by the column headers. 
+- Multiple readings are recorded for each individuum
 (subject) and each activity.
 
 "labelUnique":
-Column 1 "Subject" [1..30] refers to the test subject for the measurement record
-Column 2 "Activity" [STANDING, SITTING, LAYING, WALKING, WALKING_DOWNSTAIRS,
+- Column 1 "Subject" [1..30] refers to the test subject for the measurement record
+- Column 2 "Activity" [STANDING, SITTING, LAYING, WALKING, WALKING_DOWNSTAIRS,
 WALKING_UPSTAIRS] refers to the activity for the measurement record
-Column 3...68 contain the mean and standard deviation for different motion sensor
-readings from the smartphone. Each record contains the average of all readings
+- Column 3...68 contain the mean and standard deviation for different motion sensor
+readings readings ("features") from the smartphone. The features are described by the column headers.
+- Each record contains the average of all readings
 in the full data set for the same subject and activity.
